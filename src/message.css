@@ -1,6 +1,6 @@
 .messageMain{
     min-height: 90vh;
-    width: 90vw;
+    width: 70vw;
     padding: 2em;
     margin-top: 0px;
     overflow-y: auto;
@@ -32,8 +32,11 @@
     color: wheat;
 }
 .typeMessage{
-   
-    width: 90%;
+    height: 3vh;
+    width: 80%;
+    padding: 0.4em;
+    border-radius: 12px;
+    outline: none;
 }
 .messageBottom{
     margin-top: -10px;
@@ -42,17 +45,19 @@
     height: 5vh;
     width: 100vw;
     display: flex;
+    /* flex:2 1;    */
     justify-content: space-around;
     align-items: center;
     position: fixed;
     bottom: 0px;
 }
 .btn1{
-    height: 4vh;
-    width: 70px;
+    height: 5vh;
+    width: 80px;
     background: black;
     color:wheat;
     transition: 0.3s ease-in-out;
     cursor: pointer;
     border: 1px solid black;
+    margin-left: 10px;
   }

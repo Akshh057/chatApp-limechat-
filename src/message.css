@@ -2,7 +2,8 @@
     min-height: 90vh;
     width: 80vw;
     padding: 2em;
-    margin-top: 0px;
+    margin-top: 45px;
+    margin-bottom: 20px;
     overflow-y: auto;
 }
 .message{

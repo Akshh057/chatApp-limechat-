@@ -7,7 +7,9 @@
 .header{
   height: 12vh;
   width: 100vw;
+  position: fixed;
   background-color: black;
+  top:0;
   color: wheat;
   display: flex;
   justify-content: center;

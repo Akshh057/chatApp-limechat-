@@ -61,11 +61,20 @@ const Message = () => {
                 {
                     loading ?
                         (
-                            <h2>Loading...</h2>
+                            <h2 style={{marginTop:'20px'}}>Loading...</h2>
                         ) : (
                             apiData.map((e, idx) => {
                                 if (apiData.length === idx + 1) {
-                                    return <div ref={lastBookElementRef} key={`${idx}${e.Content}`}> </div>
+                                    return<div className={e['Message Type'] === "0" ? "message own" : "message"} key={`${e.Content}${idx}`} ref={lastBookElementRef}>
+                                    <div className="messageTop">
+                                        <p className="messageText">
+                                            {e.Content}
+                                        </p>
+                                    </div>
+                                    <div className="messageBottom">
+                                        {moment(e.CreatedAt).format('MMMM Do YYYY, h:mm:ss a')}
+                                    </div>
+                                </div>
                                 } else {
                                     return <div className={e['Message Type'] === "0" ? "message own" : "message"} key={`${e.Content}${idx}`}>
                                         <div className="messageTop">
